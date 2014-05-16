@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/MightyCasl II", BAAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\MightyCasl.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\MightyCasl.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\MightyCasl.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Debug/MightyCasl2.exe</OutputFile>
+      <AdditionalDependencies>version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\MightyCasl.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\MightyCasl.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\MightyCasl.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>Release/MightyCasl2.exe</OutputFile>
+      <AdditionalDependencies>version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssembleError.cpp" />
+    <ClCompile Include="Assembler.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CometCore.cpp" />
+    <ClCompile Include="DeviceView.cpp" />
+    <ClCompile Include="DumpView.cpp" />
+    <ClCompile Include="Environment.cpp" />
+    <ClCompile Include="EnvironmentDLg.cpp" />
+    <ClCompile Include="HorzSplitterWnd.cpp" />
+    <ClCompile Include="InputDeviceDlg.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="LicenseDlg.cpp" />
+    <ClCompile Include="listvwex.cpp" />
+    <ClCompile Include="Literal.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="MightyCasl.cpp" />
+    <ClCompile Include="MightyCaslDoc.cpp" />
+    <ClCompile Include="MightyCaslFrame.cpp" />
+    <ClCompile Include="MightyCaslStatusBar.cpp" />
+    <ClCompile Include="MightyCaslView.cpp" />
+    <ClCompile Include="Mnemonic.cpp" />
+    <ClCompile Include="MnemonicAcc.cpp" />
+    <ClCompile Include="MnemonicBase.cpp" />
+    <ClCompile Include="MnemonicCompare.cpp" />
+    <ClCompile Include="MnemonicJump.cpp" />
+    <ClCompile Include="MnemonicMacro.cpp" />
+    <ClCompile Include="MnemonicShift.cpp" />
+    <ClCompile Include="MnemonicStack.cpp" />
+    <ClCompile Include="MnemonicSuspect.cpp" />
+    <ClCompile Include="OutputView.cpp" />
+    <ClCompile Include="Register.cpp" />
+    <ClCompile Include="RegisterDlg.cpp" />
+    <ClCompile Include="RegisterView.cpp" />
+    <ClCompile Include="SimulateView.cpp" />
+    <ClCompile Include="SourceFrame.cpp" />
+    <ClCompile Include="SourceView.cpp" />
+    <ClCompile Include="StackView.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SymbolView.cpp" />
+    <ClCompile Include="WatchDlg.cpp" />
+    <ClCompile Include="WatchInfo.cpp" />
+    <ClCompile Include="WatchView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MightyCasl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssembleError.h" />
+    <ClInclude Include="Assembler.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="comet.h" />
+    <ClInclude Include="CometCore.h" />
+    <ClInclude Include="DeviceView.h" />
+    <ClInclude Include="DumpView.h" />
+    <ClInclude Include="Environment.h" />
+    <ClInclude Include="EnvironmentDLg.h" />
+    <ClInclude Include="HorzSplitterWnd.h" />
+    <ClInclude Include="InputDeviceDlg.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="LicenseDlg.h" />
+    <ClInclude Include="listvwex.h" />
+    <ClInclude Include="Literal.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="MightyCasl.h" />
+    <ClInclude Include="MightyCaslDoc.h" />
+    <ClInclude Include="MightyCaslFrame.h" />
+    <ClInclude Include="MightyCaslStatusBar.h" />
+    <ClInclude Include="MightyCaslView.h" />
+    <ClInclude Include="Mnemonic.h" />
+    <ClInclude Include="MnemonicAcc.h" />
+    <ClInclude Include="MnemonicBase.h" />
+    <ClInclude Include="MnemonicCompare.h" />
+    <ClInclude Include="MnemonicJump.h" />
+    <ClInclude Include="MnemonicMacro.h" />
+    <ClInclude Include="MnemonicShift.h" />
+    <ClInclude Include="MnemonicStack.h" />
+    <ClInclude Include="MnemonicSuspect.h" />
+    <ClInclude Include="OutputView.h" />
+    <ClInclude Include="Register.h" />
+    <ClInclude Include="RegisterDlg.h" />
+    <ClInclude Include="RegisterView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimulateView.h" />
+    <ClInclude Include="SourceFrame.h" />
+    <ClInclude Include="SourceView.h" />
+    <ClInclude Include="StackView.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SymbolView.h" />
+    <ClInclude Include="WatchDlg.h" />
+    <ClInclude Include="WatchInfo.h" />
+    <ClInclude Include="WatchView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\icon_sou.bmp" />
+    <CustomBuild Include="res\icon_sta.bmp" />
+    <CustomBuild Include="res\idr_migh.ico" />
+    <CustomBuild Include="res\MightyCasl.ico" />
+    <CustomBuild Include="res\MightyCasl.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\MightyCaslDoc.ico" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="Help\0001.htm" />
+    <CustomBuild Include="Help\0002.htm" />
+    <CustomBuild Include="Help\0003.htm" />
+    <CustomBuild Include="Help\0004.htm" />
+    <CustomBuild Include="Help\0005.htm" />
+    <CustomBuild Include="Help\0006.htm" />
+    <CustomBuild Include="Help\0007.htm" />
+    <CustomBuild Include="Help\0008.htm" />
+    <CustomBuild Include="Help\0009.htm" />
+    <CustomBuild Include="Help\0010.htm" />
+    <CustomBuild Include="Help\0011.htm" />
+    <CustomBuild Include="Help\0012.htm" />
+    <CustomBuild Include="Help\0013.htm" />
+    <CustomBuild Include="Help\0014.htm" />
+    <CustomBuild Include="Help\0015.htm" />
+    <CustomBuild Include="Help\0016.htm" />
+    <CustomBuild Include="Help\0017.htm" />
+    <CustomBuild Include="Help\mightycasl.htm" />
+    <CustomBuild Include="Help\images\0001.h1.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h2.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h3.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h4.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h5.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0002.h1.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h2.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h3.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h4.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h5.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h6.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h7.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0009.h8.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0010.h10.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0010.h9.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0011.h1.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0013.h2.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0014.h3.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0014.h4.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0015.h5.jpg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h1.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h10.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h11.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h12.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h13.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h14.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h15.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h16.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h17.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h18.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h2.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h3.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h4.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h5.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h6.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h7.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h8.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h9.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0017.h1.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\BD10297_.GIF">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\square_blue.gif">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

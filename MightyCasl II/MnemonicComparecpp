@@ -1,0 +1,27 @@
+// MnemonicComparecpp: CMnemonicCPA クラスのインプリメンテーション
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "mightycasl.h"
+#include "MnemonicCompare.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// 構築/消滅
+//////////////////////////////////////////////////////////////////////
+
+CMnemonicCPA::CMnemonicCPA()
+{
+
+}
+
+CMnemonicCPA::~CMnemonicCPA()
+{
+
+}

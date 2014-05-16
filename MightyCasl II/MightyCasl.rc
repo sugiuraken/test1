@@ -1,0 +1,925 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MightyCasl.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MightyCasl.ico"
+IDR_MIGHTYTYPE          ICON    DISCARDABLE     "res\\MightyCaslDoc.ico"
+IDR_SOURCETYPE          ICON    DISCARDABLE     "res\\idr_migh.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_ICON_SIMULATE       BITMAP  DISCARDABLE     "res\\icon_sou.bmp"
+IDB_ICON_STACK          BITMAP  DISCARDABLE     "res\\icon_sta.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_TOOL_ASM
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EXECUTE_RELOAD
+    BUTTON      ID_EXECUTE_GO
+    BUTTON      ID_EXECUTE_TRACE
+    BUTTON      ID_EXECUTE_PASS
+    BUTTON      ID_EXECUTE_COME
+    BUTTON      ID_EXEXUTE_STOP
+    SEPARATOR
+    BUTTON      ID_BREAKPOINT_SET
+    BUTTON      ID_REGISTER_SET
+    SEPARATOR
+    BUTTON      ID_WORKVIEW_DUMP
+    BUTTON      ID_WORKVIEW_WATCH
+    BUTTON      32798
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",        ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったﾌｧｲﾙ",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "ｱﾌﾟﾘｹｰｼｮﾝの終了(&X)",         ID_APP_EXIT
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "環境設定(&E)...",             ID_TOOL_ENV
+        MENUITEM SEPARATOR
+        MENUITEM "ﾗｲｾﾝｽ設定(&L)...",            ID_TOOL_LISENCE
+    END
+    POPUP "ﾍﾙﾌﾟ(&H)"
+    BEGIN
+        MENUITEM "MightyCASL のﾊﾞｰｼﾞｮﾝ情報(&A)...", ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "操作説明書の表示(&D)",        ID_HELP_DOCUMNET
+        MENUITEM "ｻﾎﾟｰﾄﾎｰﾑﾍﾟｰｼﾞへ(&S)...",      ID_HELP_SUPPORT
+    END
+END
+
+IDR_MIGHTYTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",        ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                  ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",      ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",     ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったﾌｧｲﾙ",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "ｱﾌﾟﾘｹｰｼｮﾝの終了(&X)",         ID_APP_EXIT
+    END
+    POPUP "実行(&G)"
+    BEGIN
+        MENUITEM "ﾘｽﾀｰﾄ(&R)\tCtrl+F5",          ID_EXECUTE_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "ﾌﾟﾛｸﾞﾗﾑ実行(&G)\tF5",         ID_EXECUTE_GO
+        MENUITEM "ﾄﾚｰｽ実行(&T)\tF9",            ID_EXECUTE_TRACE
+        MENUITEM "ﾊﾟｽ実行(&P)\tF10",            ID_EXECUTE_PASS
+        MENUITEM "ｶｰｿﾙ位置まで実行(&C)\tF11",   ID_EXECUTE_COME
+        MENUITEM SEPARATOR
+        MENUITEM "ﾌﾟﾛｸﾞﾗﾑ実行の停止",           ID_EXEXUTE_STOP
+    END
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "ﾚｼﾞｽﾀ設定(&R)...\tF8",        ID_REGISTER_SET
+        MENUITEM SEPARATOR
+        MENUITEM "BP設定/解除(&B)\tF2",         ID_BREAKPOINT_SET
+        MENUITEM "BP全解除(&A)",                ID_BREAKPOINT_ALLCLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "ｶｰｿﾙ位置にPRを設定(&X)\tF3",  ID_REGISTER_PC
+        MENUITEM SEPARATOR
+        MENUITEM "ｳｫｯﾁの新規追加(&W)",          ID_WATCH_NEW
+        MENUITEM "ｳｫｯﾁの変更(&C)",              ID_WATCH_MODIFY
+        MENUITEM "ｳｫｯﾁの削除(&X)",              ID_WATCH_CLEAR
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ﾒﾓﾘﾀﾞﾝﾌﾟ表示(&M)",            ID_WORKVIEW_DUMP
+        MENUITEM "ﾒﾓﾘｳｫｯﾁ表示(&W)",             ID_WORKVIEW_WATCH
+        MENUITEM "出力結果表示(&O)",            ID_WORKVIEW_OUTPUT
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "環境設定(&E)...",             ID_TOOL_ENV
+        MENUITEM SEPARATOR
+        MENUITEM "ﾗｲｾﾝｽ設定(&L)...",            ID_TOOL_LISENCE
+    END
+    POPUP "ﾍﾙﾌﾟ(&H)"
+    BEGIN
+        MENUITEM "MightyCASL のﾊﾞｰｼﾞｮﾝ情報(&A)...", ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "操作説明書の表示(&D)",        ID_HELP_DOCUMNET
+        MENUITEM "ｻﾎﾟｰﾄﾎｰﾑﾍﾟｰｼﾞへ(&S)...",      ID_HELP_SUPPORT
+    END
+END
+
+IDR_SOURCETYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)\tCtrl+N",        ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                  ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",      ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",     ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったﾌｧｲﾙ",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "ｱﾌﾟﾘｹｰｼｮﾝの終了(&X)",         ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",        ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り(&T)\tCtrl+X",        ID_EDIT_CUT
+        MENUITEM "ｺﾋﾟｰ(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)\tCtrl+V",        ID_EDIT_PASTE
+    END
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "ｱｾﾝﾌﾞﾙ(&A)\tF7",              ID_TOOL_ASM
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "環境設定(&E)...",             ID_TOOL_ENV
+        MENUITEM SEPARATOR
+        MENUITEM "ﾗｲｾﾝｽ設定(&L)...",            ID_TOOL_LISENCE
+    END
+    POPUP "ﾍﾙﾌﾟ(&H)"
+    BEGIN
+        MENUITEM "MightyCASL のﾊﾞｰｼﾞｮﾝ情報(&A)...", ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "操作説明書の表示(&D)",        ID_HELP_DOCUMNET
+        MENUITEM "ｻﾎﾟｰﾄﾎｰﾑﾍﾟｰｼﾞへ(&S)...",      ID_HELP_SUPPORT
+    END
+END
+
+CG_IDR_POPUP_WATCH_DLG MENU DISCARDABLE 
+BEGIN
+    POPUP "_ﾎﾟｯﾌﾟｱｯﾌﾟ_"
+    BEGIN
+        MENUITEM "ｳｫｯﾁの新規追加(&W)",          ID_WATCH_NEW
+        MENUITEM "ｳｫｯﾁの変更(&C)",              ID_WATCH_MODIFY
+        MENUITEM "ｳｫｯﾁの削除(&X)",              ID_WATCH_CLEAR
+    END
+END
+
+CG_IDR_POPUP_SOURCE_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_ﾎﾟｯﾌﾟｱｯﾌﾟ_"
+    BEGIN
+        MENUITEM "切り取り(&T)",                ID_EDIT_CUT
+        MENUITEM "ｺﾋﾟｰ(&C)",                    ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)",                ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "ｱｾﾝﾌﾞﾙ(&A)\tF7",              ID_TOOL_ASM
+        MENUITEM SEPARATOR
+        MENUITEM "新規作成(&N)\tCtrl+N",        ID_FILE_NEW
+        MENUITEM "開く(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "閉じる(&C)",                  ID_FILE_CLOSE
+        MENUITEM "上書き保存(&S)\tCtrl+S",      ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",     ID_FILE_SAVE_AS
+    END
+END
+
+CG_IDR_POPUP_OUTPUT_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_ﾎﾟｯﾌﾟｱｯﾌﾟ_"
+    BEGIN
+        MENUITEM "貼り付け(&P)",                ID_EDIT_PASTE
+    END
+END
+
+CG_IDR_POPUP_SIMULATE_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_ﾎﾟｯﾌﾟｱｯﾌﾟ_"
+    BEGIN
+        MENUITEM "BP設定/解除(&B)\tF2",         ID_BREAKPOINT_SET
+        MENUITEM "ｶｰｿﾙ位置にPRを設定(&X)\tF3",  ID_REGISTER_PC
+        MENUITEM "ｶｰｿﾙ位置まで実行(&C)\tF11",   ID_EXECUTE_COME
+        MENUITEM SEPARATOR
+        MENUITEM "ﾘｽﾀｰﾄ(&R)\tCtrl+F5",          ID_EXECUTE_RELOAD
+    END
+END
+
+CG_IDR_POPUP_DUMP_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_ﾎﾟｯﾌﾟｱｯﾌﾟ_"
+    BEGIN
+        MENUITEM "切り取り(&T)",                ID_EDIT_CUT
+        MENUITEM "ｺﾋﾟｰ(&C)",                    ID_EDIT_COPY
+        MENUITEM "貼り付け(&P)",                ID_EDIT_PASTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+IDR_MIGHTYTYPE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         ID_EXECUTE_PASS,        VIRTKEY, NOINVERT
+    VK_F11,         ID_EXECUTE_COME,        VIRTKEY, NOINVERT
+    VK_F2,          ID_BREAKPOINT_SET,      VIRTKEY, NOINVERT
+    VK_F3,          ID_REGISTER_PC,         VIRTKEY, NOINVERT
+    VK_F5,          ID_EXECUTE_GO,          VIRTKEY, NOINVERT
+    VK_F5,          ID_EXECUTE_RELOAD,      VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_TOOL_ASM,            VIRTKEY, NOINVERT
+    VK_F8,          ID_REGISTER_SET,        VIRTKEY, NOINVERT
+    VK_F9,          ID_EXECUTE_TRACE,       VIRTKEY, NOINVERT
+END
+
+IDR_SOURCETYPE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_TOOL_ASM,            VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 227, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MightyCASL IIのﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MightyCASL II Version",IDC_STATIC,35,9,71,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001 FREEWAY",IDC_STATIC,35,40,119,8
+    DEFPUSHBUTTON   "OK",IDOK,170,7,50,14,WS_GROUP
+    LTEXT           "1.00",IDC_VERSION,108,10,55,8
+    LTEXT           "お試し期間",IDC_SUBMSG,35,27,132,8
+END
+
+IDD_REGISTER DIALOG DISCARDABLE  0, 0, 183, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾚｼﾞｽﾀの設定"
+FONT 10, "ＭＳ ゴシック"
+BEGIN
+    LTEXT           "GR&0",IDC_STATIC,9,9,13,8
+    EDITTEXT        IDC_GR0,24,7,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&1",IDC_STATIC,9,24,13,8
+    EDITTEXT        IDC_GR1,24,22,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&2",IDC_STATIC,9,39,13,8
+    EDITTEXT        IDC_GR2,24,37,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&3",IDC_STATIC,9,54,13,8
+    EDITTEXT        IDC_GR3,24,52,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&4",IDC_STATIC,9,69,13,8
+    EDITTEXT        IDC_GR4,24,67,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&5",IDC_STATIC,9,84,13,8
+    EDITTEXT        IDC_GR5,24,82,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&6",IDC_STATIC,9,99,13,8
+    EDITTEXT        IDC_GR6,24,97,97,14,ES_AUTOHSCROLL
+    LTEXT           "GR&7",IDC_STATIC,9,114,13,8
+    EDITTEXT        IDC_GR7,24,112,97,14,ES_AUTOHSCROLL
+    LTEXT           "P&R",IDC_STATIC,11,137,9,8
+    EDITTEXT        IDC_PC,24,134,97,14,ES_AUTOHSCROLL
+    LTEXT           "S&P",IDC_STATIC,11,153,9,8
+    EDITTEXT        IDC_SP,24,150,97,14,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "FR",IDC_STATIC,7,166,114,26
+    CONTROL         "&V",IDC_FR_OVERFLOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,32,177,20,10
+    CONTROL         "&S",IDC_FR_SIGN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    56,177,20,10
+    CONTROL         "&Z",IDC_FR_ZERO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    80,177,20,10
+    DEFPUSHBUTTON   "OK",IDOK,126,7,50,14,WS_GROUP
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,126,25,50,14
+    LTEXT           "<10進数>\n#<16進数>\n%<2進数>\n'<文字>\n<ﾗﾍﾞﾙ>",
+                    IDC_STATIC,128,50,48,47
+END
+
+IDD_WATCH DIALOG DISCARDABLE  0, 0, 210, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 9, "ＭＳ ゴシック"
+BEGIN
+    LTEXT           "ｳｫｯﾁ対象(&W):",IDC_STATIC,8,10,49,8
+    EDITTEXT        IDC_TARGET,65,7,69,14,ES_AUTOHSCROLL
+    LTEXT           "長さ(&L):",IDC_STATIC,7,27,33,8
+    EDITTEXT        IDC_LENGTH,65,23,25,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_LENGTH,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,107,24,10,14
+    GROUPBOX        "表示形式",IDC_STATIC,7,45,127,78
+    CONTROL         "16進数(&X)",IDC_FMT_HEX,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,26,57,52,10
+    CONTROL         "符号付10進数(&S)",IDC_FMT_SIGNED,"Button",
+                    BS_AUTORADIOBUTTON,26,69,76,10
+    CONTROL         "符号無10進数(&U)",IDC_FMT_UNSIGNED,"Button",
+                    BS_AUTORADIOBUTTON,26,81,76,10
+    CONTROL         "2進数(&B)",IDC_FMT_BINARY,"Button",BS_AUTORADIOBUTTON,
+                    26,93,48,10
+    CONTROL         "文字(&C)",IDC_FMT_CHAR,"Button",BS_AUTORADIOBUTTON,26,
+                    105,44,10
+    DEFPUSHBUTTON   "OK",IDOK,153,91,50,14,WS_GROUP
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,153,108,50,14
+    LTEXT           "#<16進数>\n$<ﾚｼﾞｽﾀ>\n<ﾗﾍﾞﾙ>",IDC_STATIC,161,7,42,29
+END
+
+IDD_ENVIRONMENT DIALOG DISCARDABLE  0, 0, 242, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "環境設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ﾃﾞﾌｫﾙﾄのｿｰｽﾌｧｲﾙﾌｫﾙﾀﾞ(&F):",IDC_STATIC,7,13,85,8
+    EDITTEXT        IDC_SOURCEPATH,26,23,191,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_REF_SOURCEPATH,223,24,12,14
+    GROUPBOX        "ﾃﾞﾌｫﾙﾄのﾜｰｸﾋﾞｭｰ",IDC_STATIC,7,44,228,59
+    CONTROL         "ﾒﾓﾘﾀﾞﾝﾌﾟ表示(&D)",IDC_WORKVIEW_DUMP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,24,57,65,10
+    CONTROL         "ﾒﾓﾘｳｫｯﾁ表示(&W)",IDC_WORKVIEW_WATCH,"Button",
+                    BS_AUTORADIOBUTTON,24,70,66,10
+    CONTROL         "出力結果表示(&O)",IDC_WORKVIEW_DUMP3,"Button",
+                    BS_AUTORADIOBUTTON,24,83,66,10
+    CONTROL         "終了時にｳｫｯﾁ内容を保存する",IDC_SAVE_WATCH,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_GROUP | WS_TABSTOP,
+                    96,69,113,10
+    GROUPBOX        "入力ﾃﾞﾊﾞｲｽの設定",IDC_STATIC,7,110,228,59
+    CONTROL         "画面よりｷｰ入力",IDC_IN_CONSOLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,24,124,63,10
+    CONTROL         "ﾃｷｽﾄﾌｧｲﾙより入力",IDC_IN_FILE,"Button",
+                    BS_AUTORADIOBUTTON,24,137,73,10
+    EDITTEXT        IDC_IN_FILENAME,52,150,163,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "...",IDC_REF_INFILE,217,150,12,14
+    GROUPBOX        "出力ﾃﾞﾊﾞｲｽの設定",IDC_STATIC,7,175,228,59
+    CONTROL         "画面のみへ出力",IDC_OUT_CONSOLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,24,189,64,10
+    CONTROL         "画面とﾃｷｽﾄﾌｧｲﾙへ出力",IDC_OUT_FILE,"Button",
+                    BS_AUTORADIOBUTTON,24,203,88,10
+    EDITTEXT        IDC_OUT_FILENAME,52,215,163,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "...",IDC_REF_OUTFILE,217,215,12,14
+    DEFPUSHBUTTON   "OK",IDOK,133,248,50,14,WS_GROUP
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,185,248,50,14
+END
+
+IDD_INPUT_DEVICE DIALOG DISCARDABLE  0, 0, 239, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IN命令によるｷｰ入力"
+FONT 9, "ＭＳ ゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT,7,7,225,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "入力",IDOK,129,28,50,14
+    PUSHBUTTON      "EOF",IDCANCEL,182,28,50,14
+END
+
+IDD_LICENSE DIALOG DISCARDABLE  0, 0, 187, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾗｲｾﾝｽの設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ﾗｲｾﾝｽID(&I):",IDC_STATIC,7,10,36,8
+    EDITTEXT        IDC_ID,57,7,67,14,ES_AUTOHSCROLL
+    LTEXT           "ﾗｲｾﾝｽｷｰ(&K):",IDC_STATIC,7,26,41,8
+    EDITTEXT        IDC_KEY,57,22,67,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登録",IDOK,130,7,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,5,6
+ PRODUCTVERSION 1,0,5,6
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "KEN SUGIURA\0"
+            VALUE "FileDescription", "MightyCASL II ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "FileVersion", "1, 0, 5, 6\0"
+            VALUE "InternalName", "MightyCASL II\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000-2001 FREEWAY\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MightyCASL2.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MightyCASL II ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "ProductVersion", "1, 0, 5, 6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 35
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        VERTGUIDE, 24
+        VERTGUIDE, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_WATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        VERTGUIDE, 26
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_ENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        VERTGUIDE, 24
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_INPUT_DEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MightyCASL II"
+    IDR_MIGHTYTYPE          "\nSimulator\nSimulator\n\n\nMightyCasl.Document\nMighty Document"
+    IDR_SOURCETYPE          "\nSource\nEditor\nCASLｿｰｽ (*.asm)\n.asm\nMightyCasl.Document\nMighty Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MightyCASL II"
+    AFX_IDS_IDLEMESSAGE     "ﾚﾃﾞｨ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "ｶﾅ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"
+    ID_FILE_OPEN            "既存のﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のﾌｧｲﾙを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のﾌｧｲﾙを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のﾌｧｲﾙを新しい名前で保存\n名前をつけて保存"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "ﾌﾟﾛｸﾞﾗﾑの情報、ﾊﾞｰｼﾞｮﾝそして著作権を表示\nﾊﾞｰｼﾞｮﾝ情報"
+    ID_APP_EXIT             "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE2       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE3       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE4       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE5       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE6       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE7       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE8       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE9       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE10      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE11      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE12      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE13      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE14      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE15      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE16      "指定のﾌｧｲﾙを開く"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "次のｳｨﾝﾄﾞｳに切り替える\n次のﾍﾟｲﾝ"
+    ID_PREV_PANE            "前のｳｨﾝﾄﾞｳに切り替える\n前のﾍﾟｲﾝ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "作業中のｳｨﾝﾄﾞｳを複写して表示\n新規ｳｨﾝﾄﾞｳ"
+    ID_WINDOW_ARRANGE       "ｳｨﾝﾄﾞｳの下部にｱｲｺﾝを整列\nｱｲｺﾝの整列"
+    ID_WINDOW_CASCADE       "ｳｨﾝﾄﾞｳを重ねて表示\n重ねて表示"
+    ID_WINDOW_TILE_HORZ     "ｳｨﾝﾄﾞｳを並べて表示\n並べて表示"
+    ID_WINDOW_TILE_VERT     "ｳｨﾝﾄﾞｳを並べて表示\n並べて表示"
+    ID_WINDOW_SPLIT         "作業中のｳｨﾝﾄﾞｳを分割\n分割"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ﾌｧｲﾙ内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ﾂｰﾙ ﾊﾞｰの 表示/非表示\nﾂｰﾙ ﾊﾞｰの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ｽﾃｰﾀｽ ﾊﾞｰの 表示/非表示\nｽﾃｰﾀｽ ﾊﾞｰの表示切り替え"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ｳｨﾝﾄﾞｳのｻｲｽﾞを変更"
+    AFX_IDS_SCMOVE          "ｳｨﾝﾄﾞｳの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ｳｨﾝﾄﾞｳを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ｳｨﾝﾄﾞｳを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のｳｨﾝﾄﾞｳを閉じ、変更したﾌｧｲﾙの保存を指示"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ｳｨﾝﾄﾞｳを通常のｻｲｽﾞに戻す"
+    AFX_IDS_SCTASKLIST      "ｱﾌﾟﾘｹｰｼｮﾝの切り替え"
+    AFX_IDS_MDICHILD        "指定のｳｨﾝﾄﾞｳを表示"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOL_ASM             "CASLｿｰｽﾌｧｲﾙをｱｾﾝﾌﾞﾙする\nｱｾﾝﾌﾞﾙ"
+    ID_BREAKPOINT_SET       "ﾌﾞﾚｰｸﾎﾟｲﾝﾄを設定/解除する\nBP設定/解除"
+    ID_BREAKPOINT_CLEAR     "ﾌﾞﾚｰｸﾎﾟｲﾝﾄを解除する\nBP解除"
+    ID_BREAKPOINT_ALLCLEAR  "全てのﾌﾞﾚｰｸﾎﾟｲﾝﾄを解除する\n全BP解除"
+    ID_REGISTER_SET         "ﾚｼﾞｽﾀ値の設定\nﾚｼﾞｽﾀ"
+    ID_EXECUTE_PASS         "ﾌﾟﾛｸﾞﾗﾑをﾊﾟｽ実行する\nﾊﾟｽ実行"
+    ID_EXECUTE_TRACE        "ﾌﾟﾛｸﾞﾗﾑをﾄﾚｰｽ実行する\nﾄﾚｰｽ実行"
+    ID_EXECUTE_COME         "ﾌﾟﾛｸﾞﾗﾑをｶｰｿﾙ位置まで実行する\nここまで実行"
+    ID_EXECUTE_GO           "ﾌﾟﾛｸﾞﾗﾑを実行する\n実行"
+    ID_REGISTER_PC          "ｶｰｿﾙ位置にPRを設定する\nPR設定"
+    ID_EXEC_RELOAD          "ﾌﾟﾛｸﾞﾗﾑのﾘｽﾀｰﾄ\nﾘｽﾀｰﾄ"
+    ID_EXECUTE_RELOAD       "ﾌﾟﾛｸﾞﾗﾑ実行をﾘｽﾀｰﾄする\nﾘｽﾀｰﾄ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASMERR_NO_MNEMONIC  "命令語がありません"
+    IDS_ASMERR_LABEL_TOOLONG "ﾗﾍﾞﾙ文字列が長すぎます。"
+    IDS_ASMERR_LABEL_MULTIDEF "ﾗﾍﾞﾙの二重定義です。"
+    IDS_ASMERR_LABEL_BADFIRSTCHAR 
+                            "ﾗﾍﾞﾙの先頭文字は英大文字でなければなりません。"
+    IDS_ASMERR_LABEL_BADCHAR 
+                            "ﾗﾍﾞﾙは英大文字もしくは数字でなければなりません。"
+    IDS_ASMERR_OPE_BADLABEL "ｵﾍﾟﾗﾝﾄﾞのﾗﾍﾞﾙ名の記述に誤りがあります。"
+    IDS_ASMERR_OPE_UNDEF_LABEL "ｵﾍﾟﾗﾝﾄﾞのﾗﾍﾞﾙが未定義です。"
+    IDS_ASMERR_BADMNEMONIC  "命令語の記述に誤りがあります。"
+    IDS_ASMERR_ILLEGAL_START 
+                            "START命令は、ﾌﾟﾛｸﾞﾗﾑの先頭になければなりません。"
+    IDS_ASMERR_OPE_SPACE    "この命令語にｵﾍﾟﾗﾝﾄﾞを記述することはできません。"
+    IDS_ASMERR_OPE_NOTHING  "ｵﾍﾟﾗﾝﾄﾞの記述がありません。"
+    IDS_ASMERR_OPE_BADSTRFMT "ｵﾍﾟﾗﾝﾄﾞ文字定数の形式が正しくありません。"
+    IDS_ASMERR_OPE_NULLSTR  "ｵﾍﾟﾗﾝﾄﾞに空文字が含まれています。"
+    IDS_ASMERR_OPE_BADHEXFMT 
+                            "ｵﾍﾟﾗﾝﾄﾞ16進数定数は４桁の'0'～'9','A'～'F'でなければなりません。"
+    IDS_ASMERR_OPE_BADDIGITFMT "ｵﾍﾟﾗﾝﾄﾞ10進数定数の形式が正しくありません。"
+    IDS_ASMERR_OPE_MUSTBEPLUS 
+                            "ｵﾍﾟﾗﾝﾄﾞ10進数定数は０以上の数値でなければなりません。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASMERR_OPE_NUMBER   "ｵﾍﾟﾗﾝﾄﾞのﾊﾟﾗﾒｰﾀ数が正しくありません。"
+    IDS_ASMERR_OPE_FORMAT1ERR "ｵﾍﾟﾗﾝﾄﾞ第1ﾊﾟﾗﾒｰﾀの記述に誤りがあります。"
+    IDS_ASMERR_OPE_FORMAT2ERR "ｵﾍﾟﾗﾝﾄﾞ第2ﾊﾟﾗﾒｰﾀの記述に誤りがあります。"
+    IDS_ASMERR_OPE_FORMAT3ERR "ｵﾍﾟﾗﾝﾄﾞ第3ﾊﾟﾗﾒｰﾀの記述に誤りがあります。"
+    IDS_ASMERR_OPE_BADDIGITFMT2 
+                            "ｵﾍﾟﾗﾝﾄﾞ第2ﾊﾟﾗﾒｰﾀの10進数定数の形式が正しくありません。"
+    IDS_ASMERR_OPE_BADLABEL2 
+                            "ｵﾍﾟﾗﾝﾄﾞ第2ﾊﾟﾗﾒｰﾀのﾗﾍﾞﾙ名の記述に誤りがあります。"
+    IDS_ASMERR_OPE_UNDEF_LABEL2 "ｵﾍﾟﾗﾝﾄﾞ第2ﾊﾟﾗﾒｰﾀのﾗﾍﾞﾙが未定義です。"
+    IDS_ASMERR_OPE_BADDIGITFMT1 
+                            "ｵﾍﾟﾗﾝﾄﾞ第1ﾊﾟﾗﾒｰﾀの10進数定数の形式が正しくありません。"
+    IDS_ASMERR_OPE_BADLABEL1 
+                            "ｵﾍﾟﾗﾝﾄﾞ第1ﾊﾟﾗﾒｰﾀのﾗﾍﾞﾙ名の記述に誤りがあります。"
+    IDS_ASMERR_OPE_UNDEF_LABEL1 "ｵﾍﾟﾗﾝﾄﾞ第1ﾊﾟﾗﾒｰﾀのﾗﾍﾞﾙが未定義です。"
+    IDS_ASMERR_OPE_FORMATERR "ｵﾍﾟﾗﾝﾄﾞの記述に誤りがあります。"
+    IDS_ASMERR_MULTI_START  "START命令が複数記述されています。"
+    IDS_ASMERR_NOSTART      "START命令がありません。"
+    IDS_ASMERR_NOEND        "END命令がありません。"
+    IDS_ASMERR_NULLSTR      "空の行です。"
+    IDS_ASMERR_LABEL_GRX    "ﾗﾍﾞﾙに汎用レジスタ名 GR0～GR7 は使用できません。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_ASSEMBLE        "%d個のｱｾﾝﾌﾞﾙｴﾗｰが発生しました。"
+    IDS_ERR_OPENSIMULATORFRAME "ｼﾐｭﾚｰﾀｳｨﾝﾄﾞｳのｵｰﾌﾟﾝに失敗しました。"
+    IDS_ERR_SETREGISTER     "ﾚｼﾞｽﾀ設定値の記述に誤りがあります。"
+    IDS_ERR_BADWATCHTARGET_NUM 
+                            "ｳｫｯﾁ対象の指定に誤りがあります。\n#<16進数>もしくは<ﾗﾍﾞﾙ>を指定してください。"
+    IDS_ERR_BADWATCHTARGET_REG 
+                            "ｳｫｯﾁ対象の指定に誤りがあります。\n$<ﾚｼﾞｽﾀ>形式で指定できるﾚｼﾞｽﾀは、 GR0 ～ GR7, SP のいずれかです。"
+    IDS_ERR_BADWATCHTARGET_LEN 
+                            "長さの指定に誤りがあります。長さは、\n%1\nの範囲で指定してください。"
+    IDS_ERR_BADWATCHTARGET  "ｳｫｯﾁ対象の指定に誤りがあります。\n#<16進数>、<ﾗﾍﾞﾙ>もしくは$<ﾚｼﾞｽﾀ>を指定してください。"
+    IDS_ERR_OUTFILE_CREATE  "OUT命令出力ﾌｧｲﾙ( %1 )の作成に失敗しました。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_ASMCOMPLETE     "ｱｾﾝﾌﾞﾙが正常に終了しました。"
+    IDS_MSG_USERSTOP        "ﾕｰｻﾞの要求によりﾌﾟﾛｸﾞﾗﾑの実行を中断しました。"
+    IDS_MSG_EXECUTEXIT      "ﾕｰｻﾞﾌﾟﾛｸﾞﾗﾑの実行を終了します。"
+    IDS_MSG_OVERDATE        "お試し期限を過ぎています。\nﾗｲｾﾝｽIDとﾗｲｾﾝｽｷｰを入力してください。"
+    IDS_MSG_TRIAL           "☆☆ ようこそ！ MightｙCASL IIへ ☆☆ \n\n現在お試し期間中です。\n継続してご利用いただける方は、ﾗｲｾﾝｽを取得してください。\n詳しくは、 http://www2.tba.t-com.ne.jp/sken/ をご覧ください。"
+    IDS_MSG_OVERDATE_EXIT   "MightyCASLを継続して利用するために、ﾗｲｾﾝｽを取得してください。詳しくは、http://www2.tba.t-com.ne.jp/sken/ をご覧ください。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE の初期化に失敗しました。 OLE ﾗｲﾌﾞﾗﾘのﾊﾞｰｼﾞｮﾝが正しいことを確認してください。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RUNERR_NOEXECUTABLE "ｼﾐｭﾚｰｼｮﾝｴﾗｰ：現在のPRの示す位置は実行可能でない命令です。"
+    IDS_RUNERR_CODECHANGED  "ｼﾐｭﾚｰｼｮﾝｴﾗｰ：実行命令のｺｰﾄﾞが書き換わっています。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EXEXUTE_STOP         "ﾌﾟﾛｸﾞﾗﾑの実行を停止します\n停止"
+    ID_INDICATOR_CARET      "999行 / 999列"
+    ID_INDICATOR_PROGRESS   "                                        "
+    ID_WORKVIEW_DUMP        "ﾒﾓﾘﾀﾞﾝﾌﾟを表示します\nﾒﾓﾘﾀﾞﾝﾌﾟ"
+    ID_WORKVIEW_WATCH       "ﾒﾓﾘｳｫｯﾁを表示します\nﾒﾓﾘｳｫｯﾁ"
+    ID_WORKVIEW_OUTPUT      "OUT命令による出力結果を表示します\n出力結果"
+    ID_WATCH_NEW            "ｳｫｯﾁを新規に追加します\nｳｫｯﾁ追加"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WATCH_CLEAR          "ｳｫｯﾁを削除します\nｳｫｯﾁ削除"
+    ID_WATCH_MODIFY         "ｳｫｯﾁの設定を変更します\nｳｫｯﾁ変更"
+    ID_TOOL_ENV             "環境設定を行います\n環境設定"
+    ID_HELP_SUPPORT         "ｻﾎﾟｰﾄﾎｰﾑﾍﾟｰｼﾞを開く\nｻﾎﾟｰﾄ"
+    ID_HELP_DOCUMNET        "MightyCASLの操作説明書をWebブラウザで表示します\n操作説明書"
+    ID_TOOL_LISENCE         "ﾗｲｾﾝｽIDとｷｰを設定をします\nﾗｲｾﾝｽ設定"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SOURCEPATHREF_TITLE "ｿｰｽﾌｧｲﾙﾌｫﾙﾀﾞの指定"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TEXTFILE_ACCESS_FILTER 
+                            "ﾃｷｽﾄﾌｧｲﾙ (*.txt)|*.txt|すべてのﾌｧｲﾙ (*.*)|*.*||"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_INFILE_OPEN     "IN命令入力ﾌｧｲﾙ( %1 )のｵｰﾌﾟﾝに失敗しました。"
+    IDS_ERR_INFILE_READ     "IN命令入力ﾌｧｲﾙ( %1 )からの読み込みに失敗しました。"
+    IDS_ERR_OUTFILE_WRITE   "OUT命令出力ﾌｧｲﾙ( %1 )への書き込みに失敗しました。"
+    IDS_ERR_LICENSEKEY      "ﾗｲｾﾝｽIDもしくはﾗｲｾﾝｽｷｰが正しくありません。\n正しいID、ｷｰを入力してください。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASMERR_OPE_BAD_LITERAL "ﾘﾃﾗﾙの記述に誤りがあります。"
+    IDS_ASMERR_MULTI_END    "END命令が複数記述されています。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASMERR_LIT_NOTHING  "ﾘﾃﾗﾙ定数の記述がありません。"
+    IDS_ASMERR_LIT_BADSTRFMT "ﾘﾃﾗﾙ文字定数の形式が正しくありません。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ASMERR_LIT_NULLSTR  "ﾘﾃﾗﾙ文字列定数の長さが0です。"
+    IDS_ASMERR_LIT_BADHEXFMT 
+                            "ﾘﾃﾗﾙ16進数定数は４桁の'0'～'9','A'～'F'でなければなりません。"
+    IDS_ASMERR_LIT_BADDIGITFMT "ﾘﾃﾗﾙ10進数定数の形式が正しくありません。"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\MightyCasl.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

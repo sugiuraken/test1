@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[MightyCasl.dsp]
+SCC_Aux_Path = "\\webserver\VSSProjects\OriginalSoft"
+SCC_Project_Name = "$/MightyCasl II", QXAAAAAA
+
+[MightyCasl.vcproj]
+SCC_Aux_Path = "\\webserver\VSSProjects\OriginalSoft"
+SCC_Project_Name = "$/MightyCasl II", QXAAAAAA

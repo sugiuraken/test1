@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>IN/OUTによる入出力</title>
+</head>
+
+<body>
+
+<h2>IN/OUTによる入出力</h2>
+<hr>
+<h3>1. INマクロ命令の扱い</h3>  
+<p>　MightyCASLでは、IN命令の実行により、キーボードからの文字列入力もしくはテキストファイルからの文字列入力を行います。</p> 
+<p>　プログラムのシミュレート実行中にIN命令があると、以下のダイアログを表示して、ユーザに文字列の入力を求めます。</p> 
+<p align="center"><img border="0" src="images/0013.h2.gif" width="570" height="154"></p> 
+<p align="left">　ユーザは、ここで任意の文字列を入力して、INマクロ命令の実行結果としてプログラムに渡すことができます。EOFボタンを押すとEOFという状態をプログラムに渡すことができます。</p> 
+<p>　デフォルトでは、上記のようにキーボードからの入力に設定されていますが、<a href="0015.htm">環境設定</a>により、入力を外部のテキストファイルに割り当てることができます。その場合は、IN命令が実行されると、MightyCASLはあらかじめ指定されたテキストファイルから１行読み込んでそれを実行結果としてプログラムに渡します。</p> 
+<p>　入力された文字列は、<a href="0011.htm">入出力ビュー</a>に表示しますので、過去の入力データを確認することができます。</p> 
+<h3>2.OUTマクロ命令の扱い</h3>
+<p>　MightyCASLでは、デフォルトでは、OUT命令の実行により出力された文字列は<a href="0011.htm">入出力ビュー</a>に表示します。</p>
+<p>　<a href="0015.htm">環境設定</a>により、OUT命令の実行により出力された文字列を外部のテキストファイルに出力するように設定できます。この出力ファイルは、プログラムのリスタートあるいはアセンブルソースのコンパイルをすると、初期化（ファイルの内容なし）されます</p>
+
+</body>
+
+</html>

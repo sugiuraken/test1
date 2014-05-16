@@ -1,0 +1,197 @@
+﻿2014/04/10 17:15:59 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\Projects\FREEWAY\MightyCasl II\MightyCasl.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため ".\Debug\MightyCasl.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\MightyCasl.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\MightyCasl.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AssembleError.cpp Assembler.cpp ChildFrm.cpp CometCore.cpp DeviceView.cpp DumpView.cpp Environment.cpp EnvironmentDLg.cpp HorzSplitterWnd.cpp InputDeviceDlg.cpp Label.cpp LicenseDlg.cpp listvwex.cpp Literal.cpp MainFrm.cpp Memory.cpp MightyCasl.cpp MightyCaslDoc.cpp MightyCaslFrame.cpp MightyCaslStatusBar.cpp MightyCaslView.cpp Mnemonic.cpp MnemonicAcc.cpp MnemonicBase.cpp MnemonicCompare.cpp MnemonicJump.cpp MnemonicMacro.cpp MnemonicShift.cpp MnemonicStack.cpp MnemonicSuspect.cpp OutputView.cpp Register.cpp RegisterDlg.cpp RegisterView.cpp SimulateView.cpp SourceFrame.cpp SourceView.cpp StackView.cpp SymbolView.cpp WatchDlg.cpp WatchInfo.cpp WatchView.cpp
+         WatchView.cpp
+     1>d:\projects\freeway\mightycasl ii\watchview.cpp(106): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\watchview.cpp(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\watchview.cpp(249): error C2593: 'operator =' があいまいです。
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1272): 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator =(wchar_t)' の可能性があります。
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1263): または 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator =(char)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 引数リスト '(CString, int)' を一致させようとしているとき
+         WatchInfo.cpp
+         WatchDlg.cpp
+         SymbolView.cpp
+     1>d:\projects\freeway\mightycasl ii\symbolview.cpp(99): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\symbolview.cpp(213): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         StackView.cpp
+     1>d:\projects\freeway\mightycasl ii\stackview.cpp(95): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\stackview.cpp(150): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\stackview.cpp(160): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         SourceView.cpp
+     1>d:\projects\freeway\mightycasl ii\sourceview.cpp(106): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         SourceFrame.cpp
+     1>d:\projects\freeway\mightycasl ii\sourceframe.cpp(129): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' の宣言を確認してください。
+         SimulateView.cpp
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(104): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(327): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(327): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(327): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(329): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\simulateview.cpp(330): error C2065: 'i' : 定義されていない識別子です。
+         RegisterView.cpp
+     1>d:\projects\freeway\mightycasl ii\registerview.cpp(100): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\registerview.cpp(198): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\registerview.cpp(272): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         RegisterDlg.cpp
+     1>d:\projects\freeway\mightycasl ii\registerdlg.cpp(96): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\registerdlg.cpp(96): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\registerdlg.cpp(96): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\registerdlg.cpp(97): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\registerdlg.cpp(97): error C2065: 'i' : 定義されていない識別子です。
+         Register.cpp
+         OutputView.cpp
+     1>d:\projects\freeway\mightycasl ii\outputview.cpp(164): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         MnemonicSuspect.cpp
+         MnemonicStack.cpp
+         MnemonicShift.cpp
+         MnemonicMacro.cpp
+     1>d:\projects\freeway\mightycasl ii\mnemonicmacro.cpp(116): error C2593: 'operator +=' があいまいです。
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1338): 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(wchar_t)' の可能性があります。
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1331): または 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(unsigned char)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1319): または 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(char)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 引数リスト '(CString, int)' を一致させようとしているとき
+         MnemonicJump.cpp
+         MnemonicCompare.cpp
+         MnemonicBase.cpp
+         MnemonicAcc.cpp
+         コードを生成中...
+         コンパイル中...
+         Mnemonic.cpp
+     1>d:\projects\freeway\mightycasl ii\mnemonic.cpp(147): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         MightyCaslView.cpp
+         MightyCaslStatusBar.cpp
+         MightyCaslFrame.cpp
+     1>d:\projects\freeway\mightycasl ii\mightycaslframe.cpp(133): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\mightycaslframe.cpp(168): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' の宣言を確認してください。
+         MightyCaslDoc.cpp
+     1>d:\projects\freeway\mightycasl ii\mightycasldoc.cpp(84): warning C4244: '初期化中' : 'ULONGLONG' から 'DWORD' への変換です。データが失われる可能性があります。
+         MightyCasl.cpp
+     1>d:\projects\freeway\mightycasl ii\mightycasl.cpp(162): warning C4996: 'CWinApp::Enable3dControlsStatic': CWinApp::Enable3dControlsStatic is no longer needed. You should remove this call.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(5383) : 'CWinApp::Enable3dControlsStatic' の宣言を確認してください。
+     1>d:\projects\freeway\mightycasl ii\mightycasl.cpp(175): warning C4244: '引数' : '__time64_t' から 'int' への変換です。データが失われる可能性があります。
+         Memory.cpp
+         MainFrm.cpp
+     1>d:\projects\freeway\mightycasl ii\mainfrm.cpp(139): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 'sscanf' の宣言を確認してください。
+         Literal.cpp
+         listvwex.cpp
+         LicenseDlg.cpp
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(97): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(97): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(97): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(99): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(100): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(101): error C2065: 'i' : 定義されていない識別子です。
+     1>d:\projects\freeway\mightycasl ii\licensedlg.cpp(102): error C2065: 'i' : 定義されていない識別子です。
+         Label.cpp
+         InputDeviceDlg.cpp
+         HorzSplitterWnd.cpp
+         EnvironmentDLg.cpp
+         Environment.cpp
+         DumpView.cpp
+     1>d:\projects\freeway\mightycasl ii\dumpview.cpp(160): error C2593: 'operator +=' があいまいです。
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1338): 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(wchar_t)' の可能性があります。
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1331): または 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(unsigned char)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1319): または 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(char)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 引数リスト '(CString, int)' を一致させようとしているとき
+     1>d:\projects\freeway\mightycasl ii\dumpview.cpp(550): error C2668: 'ATL::CStringT<BaseType,StringTraits>::CStringT' : オーバーロード関数の呼び出しを解決することができません。(新機能 ; ヘルプを参照)
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1106): 'ATL::CStringT<BaseType,StringTraits>::CStringT(wchar_t,int)' の可能性があります。
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\cstringt.h(1090): または 'ATL::CStringT<BaseType,StringTraits>::CStringT(char,int)'
+                 with
+                 [
+                     BaseType=char,
+                     StringTraits=StrTraitMFC<char>
+                 ]
+                 引数リスト '(BYTE)' を一致させようとしているとき
+     1>d:\projects\freeway\mightycasl ii\dumpview.cpp(626): error C2440: '<function-style-cast>' : 'BYTE' から 'CString' に変換できません。
+                 コンストラクターはソース型を持てません、またはコンストラクターのオーバーロードの解決があいまいです。
+     1>d:\projects\freeway\mightycasl ii\dumpview.cpp(634): error C2440: '<function-style-cast>' : 'BYTE' から 'CString' に変換できません。
+                 コンストラクターはソース型を持てません、またはコンストラクターのオーバーロードの解決があいまいです。
+         DeviceView.cpp
+     1>d:\projects\freeway\mightycasl ii\deviceview.cpp(103): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         CometCore.cpp
+         ChildFrm.cpp
+         コードを生成中...
+         コンパイル中...
+         Assembler.cpp
+         AssembleError.cpp
+         コードを生成中...
+     1>プロジェクト "D:\Projects\FREEWAY\MightyCasl II\MightyCasl.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:03.80

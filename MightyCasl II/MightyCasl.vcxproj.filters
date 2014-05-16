@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{782b7b80-34ee-4a1e-8723-32b474922f37}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{49448a08-44dc-4a56-81d9-ee1030b5fe5e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0e27ad87-e853-4df8-8018-0c30a88a6e72}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{f87df135-8bde-4842-841e-fc60305576a5}</UniqueIdentifier>
+      <Extensions>htm</Extensions>
+    </Filter>
+    <Filter Include="Help Image Files">
+      <UniqueIdentifier>{bb903301-631f-4b2e-85db-0f19fdbab526}</UniqueIdentifier>
+      <Extensions>gif;jpg</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssembleError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Assembler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CometCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DumpView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnvironmentDLg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HorzSplitterWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDeviceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LicenseDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listvwex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Literal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MightyCasl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MightyCaslDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MightyCaslFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MightyCaslStatusBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MightyCaslView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mnemonic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicAcc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicCompare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicJump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicMacro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicShift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MnemonicSuspect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulateView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StackView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MightyCasl.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssembleError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Assembler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="comet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CometCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DumpView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnvironmentDLg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HorzSplitterWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDeviceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LicenseDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listvwex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Literal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MightyCasl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MightyCaslDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MightyCaslFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MightyCaslStatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MightyCaslView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mnemonic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicAcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicJump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicShift.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MnemonicSuspect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulateView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\icon_sou.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\icon_sta.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\idr_migh.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\MightyCasl.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\MightyCasl.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\MightyCaslDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0001.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0002.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0003.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0004.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0005.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0006.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0007.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0008.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0009.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0010.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0011.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0012.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0013.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0014.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0015.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0016.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\0017.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\mightycasl.htm">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h1.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h2.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h3.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h4.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0001.h5.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0002.h1.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h2.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h3.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h4.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h5.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h6.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0003.h7.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0009.h8.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0010.h10.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0010.h9.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0011.h1.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0013.h2.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0014.h3.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0014.h4.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0015.h5.jpg">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h1.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h10.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h11.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h12.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h13.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h14.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h15.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h16.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h17.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h18.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h2.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h3.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h4.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h5.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h6.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h7.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h8.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0016.h9.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\0017.h1.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\BD10297_.GIF">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Help\images\square_blue.gif">
+      <Filter>Help Image Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
